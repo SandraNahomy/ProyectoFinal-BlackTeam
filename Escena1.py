@@ -1,7 +1,9 @@
+from cmu_graphics import *
+
 # Escena 1:
 import time
 
-app.fondo = gradient('azulCieloProfundo','azulClaro', inicio = 'superior')
+app.fondo = gradiente('azulCieloProfundo','azulClaro', inicio = 'superior')
 
 cielo = Group(
     Estrella(80,60,45,8, fill =gradient('amarillo','amarillo','naranja'), redondez = 75),
