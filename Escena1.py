@@ -1,4 +1,3 @@
-from cmu_graphics import *
 # Escena 1:
 import time
 
