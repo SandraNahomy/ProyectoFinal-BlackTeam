@@ -2,11 +2,11 @@ from cmu_graphics import*
 
 #FONDO
 app.fondo=gradiente('negro','azulMedianoche',inicio='superior')
-
+Circle(300,70,50,relleno='blanco')                                                                                                                                                                                              
+Circle(300,70,50,relleno='negro',opacidad=10)                
 #CARRETERA
 Rect(0,320,400,80,relleno='gris')
-Linea(0,360,400,360,relleno='blanco',guion=True)
-
+Línea(0,360,400,360,relleno='blanco',guion=True)
 #PERSONAJE
 muñeco=Grupo(
         Circulo(200,345,10, relleno='blanco',anchuraDeBorde=2),
@@ -47,22 +47,18 @@ carro1=Grupo (Rect(20, 270, 80, 20, relleno='rojo'),
         Estrella(35,290,10,6, relleno=None, borde='blanco', redondez =10),
         Estrella(75,290,10,6, relleno=None, borde='blanco', redondez =10))
 
+Circle(125,295,10,relleno=None,borde='bronceado',anchuraDeBorde=3)
+Circle(125,295,5,relleno=None,borde='bronceado',anchuraDeBorde=2)
+
 carro1.centroY=338
 
-carro2= Grupo(Rect(300, 330, 70, 20, relleno='azulCieloClaro'),
-Rect(315, 315, 25, 15, relleno='azulCieloClaro'),
-Rect(315,318,23,13),
-Círculo(315, 350, 10),
-Círculo(355, 350, 10),
-Estrella(315,350,10,6, relleno=None, borde='blanco', redondez =10),
-Estrella(355,350,10,6, relleno=None, borde='blanco', redondez =10))
-#VEHICULOS
-app.pasosPorSegundo=1
+app.pasosPorSegundo=20
 
-def enPasos():
+def enPaso():
+    
+    carro1.centroX += 4
 
- carro1.centroX+=10
- carro2.centroX+=10
-
+    if carro1.centroX > 430:
+        carro1.centroX=-30
 cmu_graphics.run()
 
