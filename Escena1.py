@@ -1,4 +1,3 @@
-
 # Escena 1:
 import time
 
@@ -151,4 +150,3 @@ def enPaso():
 
 
 cmu_graphics.run()
->>>>>>> 786e7ceb52cb05b71cc3f46ce6a81150c0170842
