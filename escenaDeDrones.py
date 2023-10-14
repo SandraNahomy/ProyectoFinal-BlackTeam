@@ -62,7 +62,14 @@ ciudad = Grupo(
     Rect(338,261,30,30,relleno='azulCieloClaro'),
     
     )  
-    
+human = Grupo(
+    Circulo(340,200,10,relleno='blanco'),
+    Linea(340,240,340,200,relleno='blanco'),
+    Linea(340,220,320,200,relleno='blanco'),
+    Linea(340,220,360,200,relleno='blanco'),
+    Óvalo(280,220,60,40,relleno='blanco'),
+    Rotulo('Help',280,220)
+    ) 
  
     
     

@@ -2,7 +2,7 @@ from cmu_graphics import*
 
 #FONDO
 app.fondo=gradiente('azulCieloClaro','azulClaro',inicio='superior')
-Circle(300,70,50,relleno='amarillo')                                                                                                                                                                                              
+Circle(100,70,50,relleno='amarillo')                                                                                                                                                                                              
                
 #CARRETERA
 Rect(0,320,400,80,relleno='gris')
@@ -20,8 +20,8 @@ edificio1.centroY=255
 
 Oval(330,224,17,22,relleno=gradiente('rojo','naranja','amarillo','naranja',inicio='superior-izquierda'))
 humo1 = Circulo(300,160,20,relleno=gradiente('gris','grisClaro',inicio='superior'),visible =True,opacidad=30)
-humo2 = Circulo(300,120,20, visible = False)
-humo3 = Circulo(300,80,20, visible = False)
+humo2 = Circulo(300,120,20,relleno=gradiente('gris','grisClaro',inicio='superior'),opacidad=30 )
+humo3 = Circulo(300,80,20,relleno=gradiente('gris','grisClaro',inicio='superior'),opacidad=30 )
 
 #PERSONAJE
 
