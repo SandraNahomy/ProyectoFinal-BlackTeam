@@ -148,6 +148,11 @@ def enPaso():
     if humo3.centroY < 40:
         humo3.centroY = 160
         humo3.opacidad = 100
-    
+flecha = Line(350,40,390,40,anchuraDeLinea = 5, fill = 'red', finalDeFlecha = True)
+raton = Circulo(200,200,10)
+def enRatónMovido(ratónX,ratónY):
+    raton.centroX = ratónX
+    raton.centroY = ratónY
+
 from carrrito import *
 cmu_graphics.run()
