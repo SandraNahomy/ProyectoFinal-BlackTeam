@@ -1,6 +1,8 @@
 from cmu_graphics import *
-import Escena1
+from Escena1 import *
 
-Escena1.inicio()
-flecha.alFrente()
+
+        
+        
+
 cmu_graphics.run()
