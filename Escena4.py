@@ -1,9 +1,9 @@
 from cmu_graphics import*
 
 #FONDO
-app.fondo=gradiente('negro','azulMedianoche',inicio='superior')
-Circle(300,70,50,relleno='blanco')                                                                                                                                                                                              
-Circle(300,70,50,relleno='negro',opacidad=10)                
+app.fondo=gradiente('azulCieloClaro','azulClaro',inicio='superior')
+Circle(300,70,50,relleno='amarillo')                                                                                                                                                                                              
+               
 #CARRETERA
 Rect(0,320,400,80,relleno='gris')
 Línea(0,360,400,360,relleno='blanco',guion=True)

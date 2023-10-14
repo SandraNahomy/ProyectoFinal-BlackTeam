@@ -1,7 +1,7 @@
 from cmu_graphics import *
 
 # Rect(0,0,400,400)
-botones = Grupo(
+botones = Grupo(Rect(0,0,400,400),
     Polígono(160,160,167,151,289,151,289,172,285,177,285,215,290,225,290,235,160,235,relleno='azulOscuro',borde=rgb(0, 255, 255)),
     Poligono(120,181,110,189,110,235,120,235,relleno='azulMediaNoche',borde=rgb(0, 255, 255)),
     Rect(120,160,160,80,relleno='azulOscuro',borde='agua',anchuraDeBorde=4),
@@ -14,8 +14,7 @@ botones = Grupo(
     )
 
 
-
-
-
-
 cmu_graphics.run()
+
+
+

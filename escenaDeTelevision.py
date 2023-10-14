@@ -34,4 +34,5 @@ Línea(270,330,285,300,anchuraDeLínea=5)
 
 Línea(320,350,370,350,anchuraDeLínea=5)
 Línea(370,350,320,380,anchuraDeLínea=5)
+
 cmu_graphics.run()

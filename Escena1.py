@@ -103,7 +103,7 @@ def inicio():
         Rect(160,195,20,25, fill = 'azulClaro', borde = 'black'),
         Rect(130,240,40,31, fill = 'marronCuero', borde = 'black', anchuraDeBorde = 1),
         Rect(115,110,70,20, fill = 'white'),
-        Rotulo('hotel',150,120, fuente = 'cinzel', negrito = True))
+        Rotulo('HOTEL',150,120, fuente = 'monospace', negrito = True))
     edificio2.izquierda = edificio1.derecha
     empresa = Group(
         Rect(210,160,180,110, fill = 'marron'),
@@ -117,7 +117,7 @@ def inicio():
     letrero= Group(Rect(240,165,120,30, fill = 'naranja', borde = 'white'),
         Rotulo('EMPRESA',300,180, fill = 'nieve', negrito = True, tamaño = 20))
         
-    terremoto(edificio1,edificio2,empresa,letrero,derrumbe)
+    #terremoto(edificio1,edificio2,empresa,letrero,derrumbe)
 
 
 inicio()   
@@ -149,6 +149,5 @@ def enPaso():
         humo3.centroY = 160
         humo3.opacidad = 100
     
-
-
+from carrrito import *
 cmu_graphics.run()
